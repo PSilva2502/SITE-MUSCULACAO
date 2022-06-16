@@ -1,0 +1,207 @@
+* {
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.container {
+    margin: 0 auto;
+    max-width: 1200px;
+}
+
+:root {
+    --color-1: white;
+}
+
+body {
+    background: url(../imagens/FUNDO.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+/*-----------------------------cabecalho-----------------------------*/
+
+#cabecalho {
+    top: 0;
+    width: 100%;
+    background-color: black;
+    position: relative;
+    z-index: 1;
+}
+
+#cabecalho #icone {
+    width: 62px;
+    position: relative;
+    margin: 0 auto;
+}
+
+#cabecalho .container {
+    display: flex;
+    width: 500px;
+}
+
+#banners .container {
+    position: relative;
+    width: 700px;
+    top: 50px;
+    margin: 0 auto;
+}
+
+/*------------------------subtitulo----------------------------------*/
+
+#cabecalho nav li {
+    display: inline-block;
+    position: relative;
+    margin: 0 auto;
+}
+
+#cabecalho #menu li a {
+    color: #FFF;
+    text-decoration: none;
+    padding: 20px;
+    padding-left: 35px;
+    display: block;
+    transition: all 0.3s linear;
+}
+
+#cabecalho #menu li a::before {
+    font-size: 25px;
+    margin-right: 10px;
+}
+
+#cabecalho #menu li ul li a {
+    border-bottom: 1px solid white;
+    padding: 17px;
+}
+
+#cabecalho #menu li ul li a:hover {
+    background-color: #ff0000;
+}
+
+#cabecalho #menu li ul li {
+    display: block;
+    background-color: black;
+}
+
+#cabecalho #menu li ul {
+    display: none;
+    width: 150px;
+    position: absolute;
+    text-align: center;
+}
+
+#cabecalho #menu li ul:hover {
+    display: block;
+}
+
+#cabecalho #menu li:hover ul {
+    display: inline-block;
+}
+
+/*-------------------------Texto Biceps e foto--------------------------------*/
+
+#introducao {
+    position: relative;
+    top: 50px;
+    width: 1200px;
+    margin: 0 auto;
+}
+
+#introducao h1 {
+    text-align: center;
+    color: white;
+    margin: 0 auto;
+}
+
+#introducao h2 {
+    text-align: center;
+    color: white;
+    padding-top: 45px;
+}
+
+#introducao p {
+
+    padding-top: 15px;
+    color: white;
+    text-align: justify;
+    margin: 0 auto;
+}
+
+#introducao .container {
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    text-align: justify;
+    background-color: rgba(0, 0, 0, 0.8);
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 37px;
+    border-radius: 10px;
+    border: 2px solid whitesmoke;
+    margin: 0 auto;
+}
+
+#introducao img {
+    width: 250px;
+    border-radius: 20px;
+}
+
+#introducao #biceps {
+    float: left;
+    margin-right: 20px;
+}
+
+/*--------------------Video----------------*/
+
+#video {
+    padding: 100px;
+}
+
+#video iframe {
+    max-width: 800px;
+    width: 100%;
+    margin: 0 auto;
+    display: block;
+    aspect-ratio: 16/9;
+}
+
+#video .titulo-secao {
+    color: #3f3d3d
+}
+
+#video .container h3 {
+    position: relative;
+    text-align: center;
+    color: white;
+    font-size:x-large;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.7);
+    max-width: 450px;
+    margin: 0 auto;
+    padding: 12px;
+    border-radius: 10px;
+    border: 2px solid whitesmoke;
+    margin: 0 auto;
+    margin-bottom: 15px;
+}
+
+/*--------------------rodape----------------*/
+
+#rodape {
+    
+    text-align: center;
+    font-size: 17px;
+    padding-top: 75px;
+    background-color: rgb(0, 0, 0, 0.6);
+}
+
+#rodape p{
+    padding-bottom: 25px;
+    color: var(--color-1);
+}

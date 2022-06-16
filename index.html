@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <title>MUSCULAÇÃO</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="descriotion" content="Site sobre Musculação">
+    <meta name="keywords" content="treinos, musculação, hipertrofia">
+    <link rel="stylesheet" href="css/style.css">
+
+    <link rel="stylesheet" href="plugins/jquery.bxslider.css">
+    <link rel="stylesheet" href="plugins/magnific-popup.css">
+    <script src="plugins/jquery.min.js"></script>
+    <script src="plugins/jquery.bxslider.min.js"></script>
+    <script src="plugins/jquery.magnific-popup.js"></script>
+    <link rel="shortcut icon" href="imagens/haltere.png" type="image/x-icon">
+
+    <script>
+        $(document).ready(function () {
+            $('.slider').bxSlider({
+                mode: 'horizontal',
+                captions: true,
+                slideWidth: 680,
+                auto: true,
+                pager: true,
+                //speed: 100,
+                //controls: true
+            });
+
+            $('#galeria-fotos').magnificPopup({
+                delegate: 'a',
+                type: 'image',
+                closeOnContentClick: false,
+                closeBtnInside: false,
+                mainClass: 'mfp-with-zoom mfp-img-mobile',
+                image: {
+                    verticalFit: true,
+                    titleSrc: function (item) {
+                        return item.el.attr('')
+                    }
+                },
+                gallery: {
+                    enabled: true
+                },
+                zoom: {
+                    enabled: true,
+                    duration: 300, // don't foget to change the duration also in CSS
+                    opener: function (element) {
+                        return element.find('img');
+                    }
+                }
+
+            });
+        });
+
+
+    </script>
+</head>
+
+<body>
+
+    <header id="cabecalho">
+        <div class="container">
+            <div>
+                <img src="imagens/LOGO.webp" id="icone"><a href="index.html"></a>
+            </div>
+            <nav id="menu">
+                <ul>
+                    <li><a href="#"></a></li>
+                    <li><a href="#introducao">Historia</a></li>
+                    <li><a href="#fotos">Fotos</a></li>
+                    <li><a href="#">Treinos</a>
+                        <ul>
+                            <li><a href="internas/bíceps index.html">Bíceps</a></li>
+                            <li><a href="internas/antebraço index.html">Antebraço</a></li>
+                            <li><a href="internas/tríceps index.html">Tríceps</a></li>
+                            <li><a href="internas/peito index.html">Peito</a></li>
+                            <li><a href="internas/ombro index.html">Ombros</a></li>
+                            <li><a href="internas/costas index.html">Costas</a></li>
+                            <li><a href="internas/trapezio index.html">Trapézio</a></li>
+                            <li><a href="internas/posterior index.html">Posterior</a></li>
+                            <li><a href="internas/quadricipes index.html">Quadríceps</a></li>
+                            <li><a href="internas/panturrilha index.html">Panturrilha</a></li>
+                            <li><a href="internas/glúteo index.html">Gluteo</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section id="banners">
+        <div class="container">
+            <ul class="slider">
+                <li><img src="imagens/gira1.jpg"></li>
+                <li><img src="imagens/gira2.png"></li>
+                <li><img src="imagens/gira3.jpg"></li>
+            </ul>
+        </div>
+    </section>
+
+    <section id="introducao">
+        <div class="container">
+            <h1>Historia</h1>
+            <p>O surgimento da musculação é bem mais antigo do que imaginamos. Há achados históricos em pedra talhada,
+                datados de 1896 a.C., onde pessoas utilizavam exercícios com pesos. Paredes de capelas funerárias do
+                Egito mostram que, há 4.500 anos atrás, homens utilizavam pesos para se exercitar. Existem também várias
+                estátuas com corpos musculosos que foram encontradas no passado na Grécia, por exemplo.
+
+            <p> sua forma competitiva, o primeiro dado oficial de registro de uma competição de fisiculturismo é de
+                1901 em Londres. Essa competição foi idealizada e realizada por Eugene Sandow com o objetivo de escolher
+                o físico mais fabuloso dentre os 156 atletas que participaram. O grande campeão foi Willian Murray, de
+                Nottingham. Ele levou para casa o troféu banhado a ouro com a imagem do próprio Eugene Sandow
+                sustentando um grande halter de bolas de ferro.</p>
+
+            <p>Eugene Sandow é considerado o pai da musculação, principalmente em sua forma competitiva. Ele nasceu na
+                Alemanha, em 1867, e foi considerado um ícone do esporte. Seu físico foi considerado, durante 30 anos, o
+                melhor físico do mundo! Depois de percorrer os Estados Unidos com demonstrações espetaculosas de força e
+                cultura corporal, voltou para a Inglaterra, casou-se e dedicou-se a abrir ginásios de cultura física
+                (atualmente, conhecidos como academias de musculação) e a aprimorar os hábitos alimentares das pessoas.
+            </p>
+
+            <p>Sandow realmente foi o pai da musculação contemporânea, pois tinha uma visão a frente de sua época.
+                Fundou uma Revista com seu nome, a Sandow's Magazine, publicou vários livros, inventou aparelhos de
+                musculação, aprimorou os antigos aparelhos, criou cursos de ginástica por correspondência, foi um dos
+                primeiros nomes a defender a Educação Física em colégios e escolas, desenvolveu exercícios para amenizar
+                as dores do parto, aconselhava os empresários da época para permitir que seus funcionários realizassem
+                exercícios diariamente, sendo assim o criador da ginástica laboral. Pode ter sido o primeiro personal
+                trainer da história, pois era professor particular dos reis Eduardo VII e George V, na Inglaterra.</p>
+
+            <p>Morreu em 1925, em um acidente de carro. Em homenagem ao grande pioneiro da musculação, Eugene Sandow
+                foi imortalizado por Joe Weider que escolheu sua imagem como troféu do maior espetáculo de musculação do
+                mundo: o Mr. Olympia.</p>
+
+            <p>O fisiculturismo, como é conhecido hoje, passou a ser definido como esporte em 1946, com os campeonatos
+                de culto ao corpo esculpido. Até então, existiam os concursos de beleza física, conhecidos como Mister
+                Universo. Atualmente, o fisiculturismo é a sexta modalidade esportiva mais difundida no mundo.</p>
+
+            <p>Do esporte ao tratamento profilático, a musculação é reconhecida nos dias de hoje como forma de
+                exercício físico segura e eficaz para adolescentes, adultos, idosos, cardiopatas e obesos, tudo isso com
+                respaldo científico mundial.</p>
+        </div>
+    </section>
+
+    <section id="fotos">
+        <div class="container">
+            <h2 class="titulo-secao">Surpreenda com o resultado</h2>
+            <div id="galeria-fotos">
+                <a href="imagens/shape1.jpg" title="Foto 01"><img src="imagens/shape1.jpg" alt=""></a>
+                <a href="imagens/shape2.jpg" title="Foto 02"><img src="imagens/shape2.jpg" alt=""></a>
+                <a href="imagens/shape3.jpg" title="Foto 03"><img src="imagens/shape3.jpg" alt=""></a>
+                <a href="imagens/shap4.jpg" title="Foto 04"><img src="imagens/shap4.jpg" alt=""></a>
+                <a href="imagens/shape5.jpg" title="Foto 05"><img src="imagens/shape5.jpg" alt=""></a>
+                <a href="imagens/shape6.jpg" title="Foto 06"><img src="imagens/shape6.jpg" alt=""></a>
+                <a href="imagens/shape7.jpg" title="Foto 07"><img src="imagens/shape7.jpg" alt=""></a>
+                <a href="imagens/shape8.jpg" title="Foto 08"><img src="imagens/shape8.jpg" alt=""></a>
+            </div>
+        </div>
+    </section>
+
+    <footer id="rodape">
+        <p>Site construído para o final do periodo de SISTEMAS DE INFORMAÇÕES.</p>
+        <p>Qualquer dúvida entre em contato com o ADM (Pedro Silva) do site, número para contato (75) 98865-9398</p>
+    </footer>
+</body>
+
+</html>

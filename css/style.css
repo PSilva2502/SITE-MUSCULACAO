@@ -1,0 +1,194 @@
+* {
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.container {
+    margin: 0 auto;
+    max-width: 1200px;
+}
+
+:root {
+    --color-1: white;
+}
+
+body {
+    background: url(../imagens/FUNDO.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+/*-----------------------------cabecalho-----------------------------*/
+
+#cabecalho {
+    top: 0;
+    width: 100%;
+    background-color: black;
+    position: sticky;
+    z-index: 1;
+}
+
+#cabecalho #icone {
+    width: 62px;
+    position: relative;
+    margin: 0 auto;
+}
+
+#cabecalho .container {
+    display: flex;
+    width: 500px;
+}
+
+#banners .container {
+    position: relative;
+    width: 700px;
+    top: 50px;
+    margin: 0 auto;
+}
+
+/*------------------------subtitulo----------------------------------*/
+
+#cabecalho nav li {
+    display: inline-block;
+    position: relative;
+    margin: 0 auto;
+}
+
+#cabecalho #menu li a {
+    color: #FFF;
+    text-decoration: none;
+    padding: 20px;
+    padding-left: 35px;
+    display: block;
+    transition: all 0.3s linear;
+}
+
+#cabecalho #menu li a::before {
+    font-size: 25px;
+    margin-right: 10px;
+}
+
+#cabecalho #menu li ul li a {
+    border-bottom: 1px solid white;
+    padding: 17px;
+}
+
+#cabecalho #menu li ul li a:hover {
+    background-color: #ff0000;
+}
+
+#cabecalho #menu li ul li {
+    display: block;
+    background-color: black;
+}
+
+#cabecalho #menu li ul {
+    display: none;
+    width: 150px;
+    position: absolute;
+    text-align: center;
+}
+
+#cabecalho #menu li ul:hover {
+    display: block;
+}
+
+#cabecalho #menu li:hover ul {
+    display: inline-block;
+}
+
+/*-------------------------introdução--------------------------------*/
+
+#introducao {
+    position: relative;
+    top: 50px;
+    width: 1200px;
+    margin: 0 auto;
+}
+
+#introducao h1 {
+    text-align: center;
+    color: white;
+    margin: 0 auto;
+}
+
+#introducao p {
+
+    padding-top: 15px;
+    color: white;
+    text-align: justify;
+    margin: 0 auto;
+}
+
+#introducao .container {
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    text-align: justify;
+    background-color: rgba(0, 0, 0, 0.8);
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 30px;
+    border-radius: 10px;
+    border: 2px solid whitesmoke;
+    margin: 0 auto;
+}
+
+/*------------------------fotos----------------------------------*/
+
+#fotos .container {
+    margin-top: 50px;
+    padding-top: 50px;
+    background-color: rgb(221, 221, 221, 0.7);
+    border-radius: 15px;
+    height: 600px;
+}
+
+#fotos {
+    padding: 50px;
+}
+
+#fotos #galeria-fotos {
+    display: grid;
+    grid-template-columns: repeat(4, auto);
+    gap: 25px;
+    padding-left: 75px;
+}
+
+#fotos #galeria-fotos img {
+    display: block;
+    width: 200px;
+}
+
+#fotos #galeria-fotos img:hover {
+    transform: scale(1.2);
+    transition: all 0.5s ease;
+}
+
+.titulo-secao {
+    position: relative;
+    text-align: center;
+    padding-bottom: 25px;
+    font-size: xx-large;
+}
+
+/*--------------------rodape----------------*/
+
+#rodape {
+
+    text-align: center;
+    font-size: 17px;
+    padding-top: 75px;
+    background-color: rgb(0, 0, 0, 0.6);
+}
+
+#rodape p {
+    padding-bottom: 25px;
+    color: var(--color-1);
+}
